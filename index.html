@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Palavras Cafeinadas</title>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="DOM.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="flex-row box">
+                <div class="flex-spaced header-box">
+                    <div id="btn-sobre-nos" class="flex-column">
+                        <div class="cormorant-garmond header-text">Sobre Nós</div>
+                        <hr class="linha">
+                    </div>
+
+                    <div id="btn-cafeteria" class="flex-column">
+                        <div class="cormorant-garmond header-text">Cafeteria</div>
+                        <hr class="linha">
+                    </div>
+                </div>
+                 
+                <div id="logo-box">
+                    <img src="src/logo_escura.png" alt="logo" id="logo1">
+                    <div id="logo-nome" class="cormorant-garmond header-text">Palavras Cafeinadas</div>
+                    <img id="btn-menu" src="src/Menu-mob.png" alt="btn-menu">
+                </div>
+
+                <div class="flex-spaced header-box">
+                    <div id="btn-contato" class="flex-column">
+                        <div class="cormorant-garmond header-text">Contato</div>
+                        <hr class="linha">
+                    </div>
+                    <div id="phone" class="flex-row">
+                        <img src="src/phone-icon.png" alt="phone" id="phone-icon">
+                        <div class="cormorant-garmond header-text">19-991256972</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="menu">teste</div>
+
+        <div id="banner" class="flex-column">
+            <div id="banner-content" class="box">
+                <div class="open-sans banner-text1">Leia acompanhado de uma culinária de qualidade</div>
+                <div class="open-sans banner-text2">Aonde a paixão por livros e o amor por café sempre  tem lugar á mesa.</div>
+                <div id="btn-venha-conhecer" class="flex-row">
+                    <div class="flex-spaced" style="width: 80%; height: 100%;">
+                        <div class="open-sans-bold-22">VENHA CONHECER</div>
+                        <img class="arrow-icon" src="src/arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sobre-nos-banner" class="flex-row">
+            <div class="box flex-spaced">
+                <div class="sobre-nos-text-box">
+                    <div class="cormorant-garmond sobre-nos-titulo">SOBRE NÓS</div>
+                    <hr class="linha2">
+                    <div class="sobre-nos-text1 open-sans">A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.</div>
+                    <div class="sobre-nos-text2 open-sans">O sonho de Carolina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:</div>
+                    <div id="btn-fale-conosco" class="flex-row">
+                        <div class="flex-spaced" style="width: 70%; height: 100%;">
+                            <div class="open-sans-bold-22">FALE CONOSCO</div>
+                            <img class="arrow-icon" src="src/arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="img-copos">
+                    <img src="src/foto-copos.png" alt="foto de copos" style="width: 450px; height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <div id="onda-div">
+            <img id="cafe-onda" src="src/cafe-onda.png" alt="cafe onda">
+        </div>
+
+        <div id="carrossel-div" class="flex-column">
+            <div class="flex-column" style="margin-top: 100px;">
+                <div class="cormorant-garmond carrossel-titulo">CAFETERIA</div>
+                <hr class="linha3">
+            </div>
+
+            <div class="flex-row" style="width: 100%;">
+                <img id="arrow-left" src="src/Flecha anterior.png" alt="flecha anterior">
+                <div id="carrossel" class="box flex-row">
+                    <div class="widget">
+                        <img class="widget-img" src="src/Brigadeiro 1.png" alt="brigadeiro">
+                        <div class="widget-title">Brigadeiro de capuccino</div>
+                        <div class="widget-text">O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</div>
+                    </div>
+                    <div class="widget" style="display: none;">
+                        <img class="widget-img" src="src/chocolate cake 1.png" alt="bolo de chocolate">
+                        <div class="widget-title">Bolo de chocolate</div>
+                        <div class="widget-text">O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...</div>
+                    </div>
+                    <div class="widget" style="display: none;">
+                        <img class="widget-img" src="src/ginger bread 1.png" alt="ginger bread">
+                        <div class="widget-title">Pão de Mel</div>
+                        <div class="widget-text">O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...</div>
+                    </div>
+                    <div class="widget" style="display: none;">
+                        <img class="widget-img" src="src/sorvete cafe 1.png" alt="sorvete de café">
+                        <div class="widget-title">Brigadeiro de capuccino</div>
+                        <div class="widget-text">O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</div>
+                    </div>
+                    <div class="widget" style="display: none;">
+                        <img class="widget-img" src="src/cupcake.webp" alt="cupcake">
+                        <div class="widget-title">Cupcake</div>
+                        <div class="widget-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                    <div class="widget" style="display: none;">
+                        <img class="widget-img" src="src/macaron.jpg" alt="brigadeiro">
+                        <div class="widget-title">Macaron</div>
+                        <div class="widget-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</div>
+                    </div>
+                </div>
+                <img id="arrow-right" src="src/Flecha Proximo.png" alt="flecha proximo">
+            </div>
+        </div>
+
+        <div id="contato" class="flex-column">
+            <div class="box flex-column">
+                <div class="contato-title-box">
+                    <div class="cormorant-garmond contato-titulo">ENTRE EM CONTATO</div>
+                    <hr class="linha4">
+                </div>
+                <div id="contato-forms" class="flex-row">
+                    <div class="left">
+                        <div class="box">
+                            <div class="up">
+                                <div class="contato-text">
+                                    <img class="contato-icons" src="src/phone-icon-white.png" alt="phone">
+                                    <div class="open-sans-bold-22">19-991256972</div>
+                                </div>
+                                <div class="contato-text">
+                                    <img class="contato-icons" src="src/mail-icon.png" alt="email">
+                                    <div class="open-sans-bold-22">contato@gmail.com</div>
+                                </div>
+                                <div class="contato-text">
+                                    <img class="contato-icons" src="src/location-icon.png" alt="location">
+                                    <div class="open-sans-bold-22">Av. Paulista, 1324 - Bela Vista, São Paulo - SP, 01310-100</div>
+                                </div>
+                                <hr class="linha5">
+                                <div class="contato-text">
+                                    <img class="contato-icons" src="src/insta-icon.png" alt="instagram">
+                                    <div class="open-sans-bold-22">@palavrascafeinadas</div>
+                                </div>
+                                <div class="contato-text">
+                                    <img class="contato-icons" src="src/face-icon.png" alt="facebook">
+                                    <div class="open-sans-bold-22">Palavras Cafeinadas</div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="flex-column">
+                                    <img src="src/logo-branca-2.png" alt="logo">
+                                    <div class="cormorant-garmond logo-text">Palavras Cafeinadas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="right">
+                        <div class="box2 flex-column">
+                            <label for="nome" class="open-sans forms-labels">Nome</label>
+                            <input class="text-box" type="text" name="nome" id="nome" placeholder="Digite aqui...">
+                            <label for="email" class="open-sans forms-labels">E-mail</label>
+                            <input class="text-box" type="text" name="email" id="email" placeholder="Digite aqui...">
+                            <label for="mensagem" class="open-sans forms-labels">Mensagem</label>
+                            <textarea class="text-area" name="mensagem" id="mensagem" placeholder="Digite aqui..."></textarea>
+                            <div style="width: 100%;">
+                                <button id="btn-enviar-mensagem" class="flex-row" type="button" onclick="enviarMensagem()">
+                                    <div class="box flex-spaced">
+                                        <div class="open-sans-bold-22">ENVIAR MENSAGEM</div>
+                                        <img class="arrow-icon" src="src/arrow.png" alt="arrow">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="redes-sociais">
+                    <div class="open-sans" style="font-size: clamp(5vw, 5vw + 30px, 6vw); margin-bottom: 25px; font-weight: bold;">Nossas redes</div>
+                    <div class="flex-spaced" style="width: 100%;">
+                        <img class="icon2" src="src/facebook2.png" alt="facebook">
+                        <img class="icon2" src="src/insta2.png" alt="instagram">
+                        <img class="icon2" src="src/telefone2.png" alt="telefone">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="box flex-spaced">
+                <div class="open-sans footer-text">Desenvolvido por Unect Jr.</div>
+                <div class="open-sans footer-text">Todos os direitos reservados ©</div>
+            </div>
+        </footer>
+    </body>
+</html>
