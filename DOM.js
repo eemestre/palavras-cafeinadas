@@ -11,34 +11,86 @@ const next = document.getElementById('arrow-right');
 const btnEnviarMensagem = document.getElementById('btn-enviar-mensagem');
 const btnMenu = document.getElementById("btn-menu");
 const menu = document.getElementById("menu");
+const home = document.getElementById('banner');
 
 btnSobreNos.addEventListener('click', () => {
-    sobreNosBanner.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+    sobreNosBanner.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
 
 btnCafeteria.addEventListener('click', () => {
-    cafeteriaDiv.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    cafeteriaDiv.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
 
 btnContato.addEventListener('click', () => {
-    contatoDiv.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    contatoDiv.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
 
 btnVenhaConhecer.addEventListener('click', () => {
-    cafeteriaDiv.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    cafeteriaDiv.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
 
 btnFaleConosco.addEventListener('click', () => {
-    contatoDiv.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    contatoDiv.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
 
-btnMenu.addEventListener('click', () => {
-    menu.style.display = 'flex';
-});
+function scrollHome() {
+    menu.style.display = 'none';
+    menuOpen = false;
+    btnMenu.src = "src/Menu-mob.png";
+    btnMenu.style.width = "auto";
+    btnMenu.style.height = "auto";
+    home.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+function scrollSobre() {
+    menu.style.display = 'none';
+    menuOpen = false;
+    btnMenu.src = "src/Menu-mob.png";
+    btnMenu.style.width = "auto";
+    btnMenu.style.height = "auto";
+    sobreNosBanner.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+function scrollCafeteria() {
+    menu.style.display = 'none';
+    menuOpen = false;
+    btnMenu.src = "src/Menu-mob.png";
+    btnMenu.style.width = "auto";
+    btnMenu.style.height = "auto";
+    cafeteriaDiv.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+function scrollContato() {
+    menu.style.display = 'none';
+    menuOpen = false;
+    btnMenu.src = "src/Menu-mob.png";
+    btnMenu.style.width = "auto";
+    btnMenu.style.height = "auto";
+    contatoDiv.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
 
 function enviarMensagem() {
     console.log("Hello World!")
 }
+
+/*Botão menu*/
+let menuOpen = false;
+
+btnMenu.addEventListener('click', () => {
+    if(menuOpen) {
+        menu.style.display = 'none';
+        menuOpen = false;
+        btnMenu.src = "src/Menu-mob.png";
+        btnMenu.style.width = "auto";
+        btnMenu.style.height = "auto";
+    } else {
+        menu.style.display = 'flex';
+        menuOpen = true;
+        btnMenu.src = "src/x-icon.png";
+        btnMenu.style.width = "26px";
+        btnMenu.style.height = "22px";
+    }
+});
 
 /*carrossel*/
 let shown = [1, -1, -1];

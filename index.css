@@ -200,7 +200,7 @@ footer {
 }
 
 .carrossel-titulo {
-   text-align: center;
+   text-align: left;
    font-size: 45px;
    font-weight: bold;
    color: #F0F0F0;
@@ -253,10 +253,10 @@ footer {
 }
 
 .contato-title-box {
-   width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   margin-top: 40px;
 }
 
 .contato-titulo {
@@ -264,6 +264,13 @@ footer {
    font-weight: bold;
    font-size: 45px;
    color: #1F0C00;
+}
+
+.teste {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
 }
 
 .left {
@@ -377,8 +384,7 @@ footer {
 }
 
 .redes-sociais {
-   margin-top: 20px;
-   width: 70%;
+   width: auto;
    display: none;
    flex-direction: column;
    justify-content: center;
@@ -387,7 +393,7 @@ footer {
 }
 
 .icon2 {
-   width: clamp(6vw, 6vw + 40px, 7vw);
+   width: clamp(40px, 5vw + 30px, 6vw);
 }
 
 #logo1 {
@@ -408,6 +414,7 @@ footer {
 }
 
 #btn-menu {
+   width: auto;
    display: none;
    cursor: pointer;
    transition-duration: 0.6s;
@@ -418,8 +425,46 @@ footer {
    position: fixed;
    width: 100%;
    height: 100%;
-   background-color: #69696969;
+   background-color: #696969BB;
    z-index: 100;
+   transition-duration: 0.6s;
+}
+
+#bg {
+   width: 100%;
+   height: 450px;
+   background-color: #F5F3ED;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.btn {
+   width: 92%;
+   height: 90px;
+   background-color: #FFFFFF;
+   border-radius: 10px;
+   border-width: 0px;
+   cursor: pointer;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   transition-duration: 0.6s;
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
+   transition-duration: 0.6s;
+}
+
+.menu-text {
+   margin-left: 15px;
+   text-align: left;
+   font-size: 26px;
+   font-weight: bold;
+}
+
+#carrossel-titulo-div {
+   margin-top: 100px;
    transition-duration: 0.6s;
 }
 
@@ -430,6 +475,7 @@ footer {
    height: 650px;
    width: 100%;
    transition-duration: .8s;
+   scroll-margin-top: 80px;
 }
 
 #cafe-onda {
@@ -449,6 +495,7 @@ footer {
    width: 100%;
    height: 700px;
    transition-duration: 0.6;
+   scroll-margin-top: 100px;
 }
 
 #carrossel-div {
@@ -456,16 +503,18 @@ footer {
    height: 850px;
    background-color: #80451F;
    margin-top: -80px;
+   scroll-margin-top: 20px;
 }
 
 #carrossel {
-   height: 645px;
+   height: 600px;
 }
 
 #contato {
    width: 100%;
    height: 1000px;
    transition-duration: 0.6s;
+   scroll-margin-top: 120px;
 }
 
 #contato-forms {
@@ -615,6 +664,7 @@ footer {
 
    #sobre-nos-banner {
       height: 500px;
+      scroll-margin-top: 80px;
    }
 
    .sobre-nos-text-box {
@@ -654,10 +704,6 @@ footer {
       height: 160px;
       content: url("src/cafe-onda2.png");
    }
-   
-   .carrossel-titulo {
-      font-size: 35px;
-   }
 
    .linha3 {
       border: 1px solid #B2784A;
@@ -670,13 +716,14 @@ footer {
 
    .linha4 {
       border: 7px solid #FBC9A8;
-      width: 274px;
+      width: 100%;
       margin-top: -15px;
       margin-left: -6px;
    }
 
    #contato {
       height: 720px;
+      scroll-margin-top: 60px;
    }
 
    #contato-forms {
@@ -724,6 +771,31 @@ footer {
 
    .redes-sociais {
       display: flex;
+   }
+
+   #carrossel-div {
+      width: 100%;
+      height: 750px;
+      scroll-margin-top: -10px;
+   }
+
+   #carrossel-titulo-div {
+      margin-top: 100px;
+   }
+
+   #carrossel {
+      height: 550px;
+   }
+
+   .widget {
+      width: 350px;
+      height: 450px;
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   .widget-img {
+      margin-top: 18px;
    }
 }
 

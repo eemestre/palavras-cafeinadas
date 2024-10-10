@@ -42,7 +42,14 @@
             </div>
         </header>
 
-        <div id="menu">teste</div>
+        <div id="menu">
+            <div id="bg">
+                <button class="btn" id="menu-home" type="button" onclick="scrollHome()"><div class="open-sans menu-text">Home</div></button>
+                <button class="btn" id="menu-sobre-nos" type="button" onclick="scrollSobre()"><div class="open-sans menu-text">Sobre Nós</div></button>
+                <button class="btn" id="menu-cafeteria" type="button" onclick="scrollCafeteria()"><div class="open-sans menu-text">Cafeteria</div></button>
+                <button class="btn" id="menu-contato" type="button" onclick="scrollContato()"><div class="open-sans menu-text">Contato</div></button>
+            </div>
+        </div>
 
         <div id="banner" class="flex-column">
             <div id="banner-content" class="box">
@@ -82,7 +89,7 @@
         </div>
 
         <div id="carrossel-div" class="flex-column">
-            <div class="flex-column" style="margin-top: 100px;">
+            <div id="carrossel-titulo-div" class="flex-column">
                 <div class="cormorant-garmond carrossel-titulo">CAFETERIA</div>
                 <hr class="linha3">
             </div>
@@ -126,7 +133,7 @@
         </div>
 
         <div id="contato" class="flex-column">
-            <div class="box flex-column">
+            <div class="box teste">
                 <div class="contato-title-box">
                     <div class="cormorant-garmond contato-titulo">ENTRE EM CONTATO</div>
                     <hr class="linha4">
@@ -185,8 +192,10 @@
                         </div>
                     </form>
                 </div>
+            </div>
+            <div class="box flex-column">
                 <div class="redes-sociais">
-                    <div class="open-sans" style="font-size: clamp(5vw, 5vw + 30px, 6vw); margin-bottom: 25px; font-weight: bold;">Nossas redes</div>
+                    <div class="open-sans" style="font-size: clamp(35px, 5vw + 30px, 6vw); margin-bottom: 25px; font-weight: bold;">Nossas redes</div>
                     <div class="flex-spaced" style="width: 100%;">
                         <img class="icon2" src="src/facebook2.png" alt="facebook">
                         <img class="icon2" src="src/insta2.png" alt="instagram">
